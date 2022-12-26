@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if (userName) { %>
+        <h1>welcome <%-userName %></h1>
+        <%} else { %>
+        <p> Welcome Guest </p>
+        <% } %>
+        <form  action="/logout?_method=DELETE" method="post">
+            <button type="submit">logout</button>
+        </form>
+    <div class="container">
+        <div>
+            <h4>if you are new please register</h4>
+            <a href="/auth/register">Register</a>
+        </div>
+        <div>
+            <h4>if you are a user login</h4>
+            <a href="/auth/login">login</a>
+        </div>
+    </div>
+<style>
+    
+    .container {
+        display:flex;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+</style>
+</body>
+</html>

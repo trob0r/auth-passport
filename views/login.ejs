@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>user Login</title>
+</head>
+<body >
+
+    <h1>user login here</h1>
+    <div class="form-container">
+        <form action="/auth/login" method="post">
+            <label for="username">username/email</label>
+            <input type="text" placeholder="username" name="email">
+            <label for="password">password</label>
+            <input type="text" placeholder="password" name="password" required>
+            <div class="buttons">
+            <button type="submit">login</button>            
+            <a href="/auth/register">Register</a>
+            </div>
+        </form>        
+    </div>
+
+    <div class="breaker">
+        <hr> <h1 style="margin: 10px;">or</h1> <hr>
+    </div>
+    <div class="login-options">
+        <a  href="/auth/facebook"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="/auth/google"><i style="color: rgb(182, 38, 38);" class="fa-brands fa-square-google-plus"></i></i></a>
+    </div>
+    <style>
+        body {
+            display:flex;
+            flex:1;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #ded;
+            flex-direction: column;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #ded;
+            flex-direction: column;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #ded;
+            flex-direction: column;
+        }
+        input {
+            height: 28px;
+            text-align: center;
+            border-radius: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 5px;
+        }
+        .buttons {
+            display: flex;
+            flex: 1;
+            width: 150px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin:10px;
+        }
+        .breaker {
+            display: flex;                
+        }
+        i {
+            font-size: 40px;
+            color: rgb(27, 27, 177);
+            margin: 10px;
+        }
+    </style>
+</body>
+</html>
